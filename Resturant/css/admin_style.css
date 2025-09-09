@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+   --pink:#e84393;
+   --red:#c0392b;
+   --orange:#f39c12;
+   --black:#333;
+   --white:#fff;
+   --light-color:#666;
+   --light-white:#ccc;
+   --light-bg:#f5f5f5;
+   --border:.2rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+
+
+   --bg-colour:#5b0000;
+   --black:#111010;
+   --primary-color:#edaf3b;
+   --btn-color:#ec7b3a;
+   --second-color:#9d2d08;
+   --textColor:#e9e9e9;
+   --red:#c0392b;
+}
+
+*{
+   font-family: 'Rubik', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition:all .2s linear;
+}
+
+/* admin header  */
+.header{
+    position: sticky;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+ }
+
+ 
+ .header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem;
+    max-width: 1200px;
+    margin:0 auto;
+    position: relative;
+ }
+ .header .flex .navbar a{
+   color: black;
+ }
+ 
+ 
+ .header .flex .icons div{
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color:var(--black);
+ }
+ 
+ .header .flex .icons div:hover{
+    color:var(--pink);
+ }
+ 
+ .header .flex .navbar a{
+    margin:0 1rem;
+    font-size: 1.5rem;
+    color:var(--black);
+ }
+ 
+ 
+ .header .flex .logo{
+    font-size: 2rem;
+    color:var(--black);
+ }
+
+ .header .flex .log-btn{
+   background-color:var(--btn-color) ;
+    border-radius: .5rem;
+   font-size: 1rem;
+   color:var(--textColor);
+   cursor: pointer;
+   padding:.5rem 2rem;
+   text-transform: capitalize;
+ }
+
+/* admin header end */
+
+/* admin dashboard   */
+.dashboard h1{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+.dashboard .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap:1.5rem;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+ 
+ .dashboard .box-container .box{
+    text-align: center;
+    border:var(--border);
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    padding:2rem;
+    border-radius: .5rem;
+ }
+ 
+ .dashboard .box-container .box h3{
+    font-size: 2rem;
+    color:var(--black);
+ }
+ 
+ .dashboard .box-container .box p{
+    padding:1rem;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    color:var(--light-color);
+    border:var(--border);
+    margin-top: 1rem;
+    font-size: 1.5rem;
+ }
+
+ /* admin dashboard end  */
+
+
+ /* admin add product  */
+
+ .add-products form{
+   max-width: 50rem;
+   border-radius: .5rem;
+   background-color: var(--white);
+   border: var(--border);
+   padding:2rem;
+   text-align: center;
+   margin:100px auto;
+}
+
+.add-products form h3{
+   font-size: 2.5rem;
+   text-transform: uppercase;
+   color:var(--black);
+   margin-bottom: 1rem;
+}
+
+.log-btn{
+   background-color:var(--btn-color) ;
+    border-radius: .5rem;
+   font-size: 1rem;
+   color:var(--textColor);
+   cursor: pointer;
+   padding:.5rem 2rem;
+   text-transform: capitalize;
+ }
+
+.add-products form .box{
+   width: 100%;
+   margin:1rem 0;
+   font-size: 1.8rem;
+   color:var(--black);
+   border-radius: .5rem;
+   background-color: var(--light-bg);
+   padding:1.2rem 1.4rem;
+   border:var(--border);
+}
+
+.add-products form textarea{
+   height: 15rem;
+   resize: none;
+}
+
+.show-products .box-container{
+   max-width: 600px;
+   margin: 100px auto;
+   justify-content: center;
+}
+
+.show-products .box-container .box{
+   text-align: center;
+   padding:2rem;
+   border:var(--border);
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   border-radius: .5rem;
+   position: relative;
+}
+
+.show-products .box-container .box .image{
+   height: 30rem;
+   margin-bottom: .5rem;
+}
+
+.show-products .box-container .box .price{
+   background-color: var(--pink);
+   position: absolute;
+   top:1rem; left:1rem;
+   border-radius: .5rem;
+   color:var(--white);
+   padding:1rem;
+   font-size: 2rem;
+}
+
+.show-products .box-container .box .name{
+   margin:1rem 0;
+   font-size: 2rem;
+   color:var(--black);
+}
+
+.show-products .box-container .box .details{
+   line-height: 1.5;
+   color:var(--light-color);
+   font-size: 1.5rem;
+   padding:.5rem 0;
+}
+
+.update-product form{
+   max-width: 50rem;
+   border-radius: .5rem;
+   background-color: var(--white);
+   border:var(--border);
+   padding:2rem;
+   text-align: center;
+   margin:0 auto;
+   box-shadow: var(--box-shadow);
+}
+
+.update-product form h3{
+   font-size: 2.5rem;
+   text-transform: uppercase;
+   color:var(--b);
+   margin-bottom: 1rem;
+}
+
+.update-product form .box{
+   width: 100%;
+   margin:1rem 0;
+   font-size: 1.8rem;
+   color:var(--black);
+   border-radius: .5rem;
+   background-color: var(--light-bg);
+   padding:1.2rem 1.4rem;
+   border:var(--border);
+}
+
+.update-product form textarea{
+   height: 15rem;
+   resize: none;
+}
+
+.update-product .image{
+   height: 30rem;
+   border:var(--border);
+   border-radius: .5rem;
+}
+ /* admin add product end */
+
+
+ /* table  */
+ table {
+   font-family: arial, sans-serif;
+   border-collapse: collapse;
+   width: 100%;
+ }
+ 
+ td, th {
+   border: 1px solid #dddddd;
+   text-align: left;
+   padding: 15px;
+ }
+ 
+ tr:nth-child(even) {
+   background-color: #dddddd;
+ }
+
+ .delete-btn{
+   font-size: 14px;
+   background-color: var(--red);
+ }
+ /* table end */
+
+
+ /* admin order page  */
+ .placed-orders .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 33rem);
+   gap:1.5rem;
+   align-items: flex-start;
+   max-width: 1200px;
+   margin: 0 auto;
+   justify-content: center;
+}
+
+.placed-orders .box-container .box{
+   padding:2rem;
+   background-color: var(--white);
+   border: 3px solid black;
+   border-radius: .5rem;
+   margin-top: 40px;
+}
+
+.placed-orders .box-container .box p{
+   margin-bottom: 1rem;
+   font-size: 1.2rem;
+   color:black;
+}
+
+.placed-orders .box-container .box p span{
+   color:var(--pink);
+}
+
+.placed-orders .box-container .box form{
+   margin-top: 1rem;
+   text-align: center;
+}
+
+.placed-orders .box-container .box form select{
+   width: 100%;
+   border:var(--border);
+   padding:.8rem 1rem;
+   font-size: 1.2rem;
+   color:var(--black);
+   border:var(--border);
+   border-radius: .5rem;
+   margin:.5rem 0;
+}
+ /* admin order page end */
+
+
+ .update-btn{
+   background-color: var(--btn-color);
+   color: var(--textColor);
+   padding: .8rem 2rem;
+   border-radius: 10px;
+   font-size: 1rem;
+   cursor: pointer;
+ }
+
+ .delete-btn{
+   background-color: var(--bg-colour);
+   color: var(--textColor);
+   padding: .8rem 2rem;
+   border-radius: 10px;
+   font-size: 1rem;
+   cursor: pointer;
+ }
